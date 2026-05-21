@@ -102,13 +102,15 @@
           <input id="loginEmail" type="email" placeholder="artist@email.com" required />
         </div>
 
-        <div>
-          <label data-i18n="passwordLabel2">Пароль</label>
-          <div class="pass-wrap">
-            <input id="loginPassword" type="password" placeholder="Твій пароль" required />
-            <button class="pass-toggle" type="button" onclick="togglePass('loginPassword',this)">👁</button>
-          </div>
-        </div>
+       <div>
+  <label data-i18n="passwordLabel2">Пароль</label>
+  <div class="pass-wrap">
+    <!-- Змінюємо placeholder на універсальний -->
+    <input id="loginPassword" type="password" placeholder="Пароль | Password" required />
+    <button class="pass-toggle" type="button" onclick="togglePass('loginPassword',this)">👁</button>
+  </div>
+</div>
+
 
         <button id="loginBtn" class="submit" type="submit" data-i18n="loginBtn">Увійти в майстерню</button>
 
